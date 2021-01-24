@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<link rel="stylesheet" href="yoga.css">
+
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content = "you can order things through this page " >
+  <title>Path of Light Yoga Studio</title>
+  <style>
+   th {font-size: 6;
+       color: 19D4DA;
+       }
+  label {font-size: 6;
+       color: 19D4DA;
+       } 
+  table { cellspacing:20;
+      align:left;
+      border:1;
+      border-collapse: collapse;
+      }
+  </style>
+  <script type ="text/JavaScript">
+
+    function calculateHair()
+    {
+    document.frmShop.costHair.value = document.frmShop.hair.value * 49.99;
+    }
+   function calculateTops()
+    {
+     document.frmShop.costTops.value = document.frmShop.tops.value * 39.99; 
+    }  
+
+  function totalCost()
+  {
+    document.frmShop.total.value=document.frmShop.hair.value * 49.99 +
+    document.frmShop.tops.value * 39.99;
+  }
+  </script>  
+</head>
+
+<html>
+<header id="l1">
+  <h1>Path of Light Yoga Studio</h1>
+</header>
+
+<nav>
+  <ul>
+   <li><a href = "index.html">Home</a> </li>
+  
+   <li><a href = "classes.html">Classes</a> </li> 
+   
+   <li><a href = "schedule.html">Schedule</a> </li>
+   
+   <li><a href = "contact.html">Contact</a> </li>
+   
+   <li><a href = "about.html" >About</a></li>
+
+   <li><a href = "multimedia.html">Media</a> </li>
+
+   <li><a href = "order.html">catalogue</a></li>
+
+   <li><a href = "survey.html">survey</a></li>
+  </ul>
+</nav>
+
+<div id="wrapper">
+<main>
+    <div id="hero">
+    <img src="store.jpg" alt="nameste yoga set">
+  </div>
+  <h1>SHOPING CART</h1>
+  <form name="frmShop">
+  <table border="1">
+  <tr>
+   <th> Description  </th>
+   <th>Price</th>
+   <th>Quantity</th>
+  <th>Cost</th>
+  </tr>
+
+  <tr>
+   <td>Namaste Yoga Set</td>
+   <td>$49.99</td>
+   <td><input type="text" id="hair" name="hair" size="6" onChange="calculateHair()"></td>
+   <td><input type = "text" size = "6" id ="costHair" name="costHair" readonly="true"></td>
+  </tr>
+  <tr>
+   <td>Lotus Yoga Set</td>
+   <td>$39.99</td>
+   <td><input type="text" id="tops" name="tops" size="6" onChange="calculateTops()"></td>
+   <td><input type = "text" size = "6" id ="costTops" name="costTops" readOnly="true"></td>
+  </tr>
+
+  <tr>
+   <td ><label>Total Cost:</td> 
+   <td ></td>
+   <td ></td>
+   <td><input type="text" size="6" id="total" name="total" readOnly="true"></label>
+   </td>
+  </tr>
+  
+  
+    </table>
+    <br>
+  <div>
+   <input type="button" onclick="totalCost()" id="btntotal" name="btntotal" value="calculate Total" >
+  </div>
+  </form>
+<br><br><br><br>
+<div>
+  Path of Light Yoga Studio<br>
+  612 Serenity Way<br>
+  El Dorado, CA 96162<br><br>
+  888-555-5555<br><br><br>
+</div>
+</div >
+<div id="layer">
+<footer>
+    Copyright &copy 2019 Path of Light Yoga<br>
+    <a href = "mailto:aditya.devansh02@gmail.com">aidyta.devansh02@gmail.com</a>
+</footer>
+</div>
+
+</main>
+</html>

@@ -1,0 +1,278 @@
+
+body {
+  background-color: #3F2860;
+  color: #3F2860;
+  font-family: Verdana, Arial, sans-serif;
+  background-image: url(yoga.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+header {
+  background-color: #9BC1C2;
+  background-image: url(lilyheader.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  text-align:center;
+  height: 150px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+h1 {
+  padding-top: 50px;
+  padding-left: 2em;
+  font-size:200%;
+}
+
+nav {
+  float: left;
+  font-weight: bold;
+  padding: 10px;
+
+;
+  width: 7.8%;
+  margin-top: 20px;
+
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0px;
+  margin-left: 0px;
+  background-color: #b9f522;
+
+}
+
+nav li {
+ 
+   list-style-type: none;
+   font-size: 150%;
+   margin-left: 0px;
+   margin-bottom: 0.5em;
+}
+
+nav ul{
+  margin-left: 2px;
+  padding: 0px;
+}
+.studio {
+  font-style: italic;
+
+}
+
+footer {
+  padding:2em 2em 2em 2em;
+  background-color: #9BC1C2;
+  font-size: .60em;
+  font-style: italic;
+  text-align: center;
+  padding: 1em;
+
+}
+
+
+#wrapper {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #F5F5F5;
+  min-width: 1000px;
+  max-width: 1280px;
+  margin-bottom: 2em;
+  opacity: 0.8;
+}
+
+main {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+img{
+
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#hero{
+  text-align: center;
+}
+
+#layer{
+  background-color: yellow;
+   padding:5px 5px 5px 5px;
+}
+
+
+#l1{
+  border: 8px solid red;
+}
+
+table
+{
+    width: 60%;
+    text-align: center;
+    border: 1px #3f2860 solid;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+tr:nth-of-type(even)
+{
+    background-color: #9bc1c2;
+}
+
+td, th
+{
+    padding: 5px;
+    border: 1px purple solid;
+}
+
+caption
+{
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1024px)
+{
+    body 
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrapper
+    {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        clear: both;
+    }
+
+    header
+    {
+        padding-top: 1px;
+    }
+
+    nav 
+    {
+        float: none;
+        width: auto;
+        padding-left: 2em;
+        background-color: none;
+    }
+
+    nav a
+    {
+        padding: 0.2em;
+        margin-left: 0.3em;
+        float: left;
+        width: 23%;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    main
+    {
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+
+        margin: 0;
+
+        font-size: 90%;
+
+        clear: both;
+    }
+
+    #hero img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    h2, h3, p, dl
+    {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    main ul
+    {
+        margin-left: 2em;
+    }
+
+    .floatleft
+    {
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+
+    .clear
+    {
+        padding-left: 2em;
+    }
+}
+
+@media only all and (max-width: 768px)
+{
+    h1
+    {
+        font-size: 2em;
+        padding-top: 0.25em;
+        padding-left: 1.5em;
+        width: 85%;
+        text-align: center;
+    }
+
+    nav a
+    {
+        padding: 0.5em;
+        width: 45%;
+        float: left;
+        min-width: 6em;
+        margin-left: 0.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    main
+    {
+        padding-top: 0;
+    }
+
+    .floatleft
+    {
+        float: none;
+        display: none;
+    }
+
+    #hero
+    {
+        display: none;
+    }
+
+    footer
+    {
+        padding: 0.5em;
+        margin: 0;
+    }
+
+    #mobile
+    {
+        display: inline;
+    }
+
+    #desktop
+    {
+        display: none;
+    }
+}

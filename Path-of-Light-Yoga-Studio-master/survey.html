@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<link rel="stylesheet" href="yoga.css">
+
+
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content = " can fill a survey form about yoga" >
+  <title>Path of Light Yoga Studio</title>
+<style>
+
+form { font-family:Arial;
+
+font-size:90%;
+
+padding-left: 5px;
+
+margin-top:10px; }
+
+label { display: block; }
+
+legend, label {font-weight: bold; }
+
+fieldset { width: 480px;
+
+margin: 10px 0}
+
+textarea, select { display: block;
+
+margin-bottom: 10px; }
+
+</style>
+
+<script>
+function validateForm() {
+
+if (document.forms[0].email.value == "" ) {
+alert("Please enter an e-mail address.");
+return false;
+} 
+return true;
+}
+
+</script>
+</head>
+
+<html>
+<header id="l1">
+  <h1>Path of Light Yoga Studio</h1>
+</header>
+
+<nav>
+  <ul>
+   <li><a href = "index.html">Home</a> </li>
+  
+   <li><a href = "classes.html">Classes</a> </li> 
+   
+   <li><a href = "schedule.html">Schedule</a> </li>
+   
+   <li><a href = "contact.html">Contact</a> </li>
+   
+   <li><a href = "about.html" >About</a></li>
+
+   <li><a href = "multimedia.html">Media</a> </li>
+
+   <li><a href = "order.html">catalogue</a></li>
+
+   <li><a href = "survey.html">survey</a></li>
+  </ul>
+</nav>
+
+<div id="wrapper">
+<main>
+  <h1>Yoga Survey</h1>
+
+<form method="post" action="http://webdevbasics.net/scripts/yoga.php" onsubmit="return validateForm();">
+
+<label for="name">Name:</label>
+
+<input type="text" name="name" id="name">
+
+<label for="email">E-Mail: </label>
+
+<input type="text" name="email" id="email">
+
+<fieldset><legend>Select Your Favorite Types of Yoga:</legend>
+
+<label><input type="checkbox" name="GHY" id="GHY" value="Yes"> Gentle Hatha Yoga</label>
+
+<label><input type="checkbox" name="VY" id="VY" value="Yes"> Vinyasa Yoga</label>
+
+<label><input type="checkbox" name="RY" id="RY" value="Yes"> Restorative Yoga</label>
+
+<label><input type="checkbox" name="Other" id="Other" value="Yes"> Other</label>
+
+</fieldset>
+
+<fieldset><legend>Select how often you do yoga:</legend>
+
+<label><input type="radio" value="Weekly" checked="checked"
+
+name="Frequency" id="Week"> Weekly</label>
+
+<label><input type="radio" name="Frequency" value="Daily"
+
+id="Daily"> Daily</label>
+
+<label><input type="radio" name="Frequency" value="Monthly"
+
+id="Monthly"> Monthly</label>
+
+<label><input type="radio" name="Frequency" value="Never"
+
+id="PurchaseNever"> Never </label>
+
+</fieldset>
+
+<label for="locations">Select the locations you go to do yoga:</label>
+
+<select size="3" name="locations" multiple="multiple" id="locations" >
+
+<option value="None selected" selected="selected">Select one or more locations</option>
+
+<option value="At home">At home</option>
+
+<option value="At Studio">At Studio</option>
+
+<option value="In Park">In Park</option>
+
+</select>
+
+<label for="role">What role does yoga play in your life?</label>
+
+<textarea rows="3" name="role" id="role" cols="60"></textarea>
+
+<input type="submit" value="Submit"> <input type="reset">
+
+</form>
+<br><br><br><br>
+<div>
+  Path of Light Yoga Studio<br>
+  612 Serenity Way<br>
+  El Dorado, CA 96162<br><br>
+  888-555-5555<br><br><br>
+</div>
+</div >
+<div id="layer">
+<footer>
+    Copyright &copy 2019 Path of Light Yoga<br>
+    <a href = "mailto:aditya.devansh02@gmail.com">aidyta.devansh02@gmail.com</a>
+</footer>
+</div>
+
+</main>
+</html>
